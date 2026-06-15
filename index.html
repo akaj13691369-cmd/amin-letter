@@ -140,6 +140,20 @@ transform:translateY(0);
 </style>
 </head>
 
+  <audio id="voice" controls style="display:none;">
+  <source src="هشتمین سالگرد عقد.m4a" type="audio/mp4">
+</audio>
+
+<script>
+window.addEventListener('load', function() {
+  setTimeout(function(){
+    const audio = document.getElementById('voice');
+    if(audio){
+      audio.play().catch(()=>{});
+    }
+  }, 1000);
+});
+</script>
 <body>
 
 <div class="container">
