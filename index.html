@@ -258,16 +258,11 @@ src="   https://raw.githubusercontent.com/akaj13691369-cmd/amin-letter/main/file
 </div>
 
 <script>
+function openLetter() {
+  document.getElementById("envelopeScreen").style.display="none";
+  document.getElementById("letter").style.display="block";
 
-function openLetter(){
-
-document.getElementById("flap").style.transform="rotateX(180deg)";
-
-setTimeout(()=>{
-document.getElementById("envelopeScreen").style.display="none";
-document.getElementById("letter").style.display="block";
-},800);
-
+  document.getElementById('voice').play();
 }
 
 </script>
